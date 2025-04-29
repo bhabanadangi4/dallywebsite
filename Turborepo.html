@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Turborepo</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="turborepo.css">
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+ <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+ <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+ <div class="flex items-center space-x-3">
+ <img src="data:image/png;base64,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" alt="Turborepo Logo" class="w-10 h-10 rounded-full" />
+ <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Turborepo</span>
+ </div>
+
+
+ <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+ <svg class="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+ </button>
+
+ <nav id="main-nav" class="hidden md:flex space-x-6 text-sm font-medium">
+ <a href="productpage.html" class="hover:text-indigo-600">Docs</a>
+ <a href="#" class="hover:text-indigo-600">Blog</a>
+ <a href="#" class="hover:text-indigo-600">Showcase</a>
+ <a href="#" class="hover:text-indigo-600">Enterprise</a>
+ <button id="toggleThemeDesktop" class="text-sm px-3 py-1 bg-gray-200 dark:bg-gray-600 rounded hover:bg-gray-300 dark:hover:bg-gray-500">
+Dark or light
+ </button>
+ </nav>
+ </div>
+
+ <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-800 shadow-md absolute top-full left-0 right-0 z-40 overflow-hidden transition-max-height duration-300 ease-in-out" style="max-height: 0px;">
+ <nav class="px-4 py-2">
+ <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Docs</a>
+ <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Blog</a>
+ <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Showcase</a>
+ <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Enterprise</a>
+ </nav>
+ <button id="toggleThemeMobile" class="block w-full text-sm px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded hover:bg-gray-300 dark:hover:bg-gray-500 text-left">
+ Dark or light 
+ </button>
+ </div>
+ </header>
+
+ <section class="text-center py-16 px-4">
+ <h2 class="text-4xl font-extrabold mb-4">Make Ship Happen</h2>
+ <p class="text-lg max-w-xl mx-auto">
+ The build system for JavaScript and TypeScript codebases, powered by Rust.
+ </p>
+ </section>
+
+ <section class="grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-10 max-w-6xl mx-auto">
+    <div class="box-animated-border text-center p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow">
+      <img src="https://og-image-react-egghead.vercel.app/topic/turborepo?orientation=landscape&v=20201105" alt="Turborepo" class="mx-auto w-48 h-48 object-cover rounded mb-4" />
+      <h3 class="text-xl font-semibold mb-2">TURBOREPO</h3>
+      <p>Build system for monorepos.</p>
+    </div>
+    <div class="box-animated-border text-center p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHxNn15lsazWVAwH02AZcHGw25cNpwfTr7LA&s" alt="Turbopack" class="mx-auto w-48 h-48 object-cover rounded mb-4" />
+      <h3 class="text-xl font-semibold mb-2">TURBOPACK</h3>
+      <p>Bundler optimized for speed and scale.</p>
+    </div>
+  </section>
+  
+ </section>
+ <section class="py-12 px-4 text-center">
+    <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-8">TRUSTED BY TEAMS FROM AROUND THE WORLD</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+        <img src="https://logowik.com/content/uploads/images/vercel1868.jpg" alt="Vercel" class="h-8" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="h-8" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u8BZcgcIxcfgSJsas_HDf2pfYTBlmo2q3g&s" alt="Microsoft" class="h-8" />
+        <img src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png" alt="Netflix" class="h-8" />
+        <img src="https://images.seeklogo.com/logo-png/4/2/disney-logo-png_seeklogo-41972.png" alt="Disney" class="h-8" />
+        <img src="https://1000logos.net/wp-content/uploads/2021/04/Adobe-logo.png" alt="Adobe" class="h-8" />
+    </div>
+</section>
+
+ <footer class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm py-10">
+ <div class="max-w-7xl mx-auto px-4">
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+ <div class="">
+ <h4 class="text-gray-900 dark:text-white font-semibold mb-3">Resources</h4>
+ <ul class="space-y-2">
+ <li><a href="#" class="hover:text-indigo-500">Docs</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Blog</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Showcase</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Releases</a></li>
+ </ul>
+ </div>
+
+ <div>
+ <h4 class="text-gray-900 dark:text-white font-semibold mb-3">Community</h4>
+ <ul class="space-y-2">
+ <li><a href="#" class="hover:text-indigo-500">GitHub</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Discussions</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Twitter</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Discord</a></li>
+ </ul>
+ </div>
+
+ <div>
+ <h4 class="text-gray-900 dark:text-white font-semibold mb-3">Vercel</h4>
+ <ul class="space-y-2">
+ <li><a href="#" class="hover:text-indigo-500">Vercel.com</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Careers</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Open Source</a></li>
+ </ul>
+ </div>
+
+ <div>
+ <h4 class="text-gray-900 dark:text-white font-semibold mb-3">Legal</h4>
+ <ul class="space-y-2">
+ <li><a href="#" class="hover:text-indigo-500">Privacy Policy</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Terms of Service</a></li>
+ <li><a href="#" class="hover:text-indigo-500">Cookie Policy</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="border-t border-gray-200 dark:border-gray-700 mt-6 pt-4 text-center text-sm">
+ ©️ 2025 Turborepo. All rights reserved.
+ </div>
+ </div>
+ </footer>
+ <script>
+ const mobileMenuButton = document.getElementById('mobile-menu-button');
+ const mobileMenu = document.getElementById('mobile-menu');
+ const toggleDesktop = document.getElementById('toggleThemeDesktop');
+ const toggleMobile = document.getElementById('toggleThemeMobile');
+ const html = document.documentElement;
+
+ mobileMenuButton.addEventListener('click', () => {
+ mobileMenu.classList.toggle('hidden');
+ mobileMenu.style.maxHeight = mobileMenu.classList.contains('hidden') ? '0px' : mobileMenu.scrollHeight + 'px';
+ });
+
+ const toggleDarkMode = () => {
+ html.classList.toggle('dark');
+ };
+
+ toggleDesktop.addEventListener('click', toggleDarkMode);
+ toggleMobile.addEventListener('click', toggleDarkMode);
+ </script>
+
+</body>
+</html>

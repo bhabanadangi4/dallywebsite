@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <style>
+        body{
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+        .cerausel-wrapper{
+            width: 90%;
+            margin: auto;
+        }
+        .heading{
+            text-align: center;
+            font-size: 3rem;
+            /* margin: 10px 0; */
+        }
+        .sub-heading{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .card{
+           
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            /* margin: 20px 0; */
+            border-radius: 10px;
+            color: black;
+            background: rgb(226, 223, 223);
+        }
+       
+        .h-three{
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+        .para{
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .image{
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+           
+        }
+        /* .image-container {
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Add padding here 
+    }*/
+    .owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .owl-nav button {
+    background: #000 !important;
+    backdrop-filter: blur(20px) !important;
+    color: #fff !important;
+    font-size: 2rem !important;
+    border-radius: 20%; 
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+
+        
+        
+        
+    
+
+    .owl-nav button:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="cerausel-wrapper">
+        <h1 class="heading">Image Carousel</h1>
+        <h3 class="sub-heading">This is image Carousel</h3>
+        <div class="cerausel owl-carousel">
+            <div class="card card-one">
+                <div class="image-container">
+                <img class="image" src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+                <h3 class="h-three">Photographer</h3>
+                <p class="para">This is photographer image</p>
+            </div>
+            <div class="card card-two">
+                <img class="image" src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="">
+                <h3 class="h-three">Chameleon</h3>
+                <p class="para">This is Chameleon image</p>
+            </div>
+            <div class="card card-three">
+                <img class="image" src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" alt="">
+                <h3 class="h-three">Lakeside</h3>
+                <p class="para">This is Lakeside image</p>
+            </div>
+            <div class="card card-four">
+                <img class="image" src="https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg" alt="">
+                <h3 class="h-three">Tiger</h3>
+                <p class="para">This is Tiger image</p>
+            </div>
+            <div class="card card-five">
+                <img class="image" src="https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png" alt="">
+                <h3 class="h-three">Sunset</h3>
+                <p class="para">This is Sunset image</p>
+            </div>
+            <div class="card card-six">
+                <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-I4A0xZZ3HqQb1mtnD24hE3QitpReO_m4kbhtWbw1F0XATi5R0rSqZJMEtYdD6_iCzY&usqp=CAU" alt="">
+                <h3 class="h-three">Photographer</h3>
+                <p class="para">This is photographer image</p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+       $(".cerausel").owlCarousel({
+    margin: 10,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    nav: true, // 👉 Add this line to show arrows
+    navText: ["<", ">"], // 👉 Optional: Customize arrows
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
+    </script>
+</body>
+</html>

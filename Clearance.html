@@ -1,428 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quip Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clearance | Save up to 40% Sonic Toothbrushes, Floss, & more | quip</title>
+  <link rel="stylesheet" href="clearance.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <header class="bg-white shadow-md py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:shadow-outline">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-                <div id="mobile-menu" class="hidden absolute top-16 left-0 bg-white shadow-lg rounded-md py-2 px-4 w-full z-10">
-                    <a href="#" class="block text-gray-700 hover:bg-gray-100 rounded-md py-2 px-4">Shop All</a>
-                    <a href="#" class="block text-gray-700 hover:bg-gray-100 rounded-md py-2 px-4">Refills</a>
-                    <a href="#" class="block text-gray-700 hover:bg-gray-100 rounded-md py-2 px-4">Electric Toothbrushes</a>
-                    <a href="#" class="block text-gray-700 hover:bg-gray-100 rounded-md py-2 px-4">Gifts</a>
-                    <a href="#" class="block text-gray-700 hover:bg-gray-100 rounded-md py-2 px-4">Discover</a>
-                    <a href="#" class="block text-gray-700 hover:bg-gray-100 rounded-md py-2 px-4">Clearance</a>
-                </div>
-            </div>
-            <a href="#" class="inline-block">
-                <img src="https://www.chaifetzgroup.com/wp-content/uploads/2020/09/quip-toothbrush-logo-vector.png" alt="quip logo" class="h-6 md:h-8">
+
+<body>
+  <div class="top-banner">
+    <div class="banner-content">
+      <button class="banner-prev-btn" aria-label="Previous banner message">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <p>Clean up chocolate breath with 20% off Kids Brushes. Code BUNNY20. <a href="#" class="terms-link">Terms Apply</a></p>
+      <button class="banner-next-btn" aria-label="Next banner message">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+      <button class="banner-close-btn" aria-label="Close banner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="locator-bar">
+    <div class="locator-content">
+      <a href="#" class="locator-link">
+        <img src="https://ext.same-assets.com/3137273170/307560151.svg" alt="Location icon" class="locator-icon" />
+        Find a Store
+      </a>
+      <a href="#" class="professional-link">
+        <img src="https://ext.same-assets.com/3137273170/4076212186.svg" alt="Dentist icon" class="dentist-icon" />
+        Professionals
+      </a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="https://ext.same-assets.com/2855874879/651926542.svg" alt="quip logo"></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Quip.html">Shop </a></li>
+                <li><a href="#">Electric Toothbrushes</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">clearance</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#" class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </a>
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Shop All</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Refills</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Electric Toothbrushes</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Gifts</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Discover</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Clearance</a></li>
-                </ul>
-            </nav>
-            <div class="flex items-center space-x-4">
-                <button id="search-button" class="text-gray-700 focus:outline-none focus:shadow-outline">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYOXO8PRzZwjdoTPqAj5UxjSJG4bvrhHuKg&s" alt="Search Icon" class="w-5 h-5">
-                </button>
-                <a href="#" class="text-gray-700 focus:outline-none focus:shadow-outline">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlIVYJNkJODVutCa3O75_pTyq5ZmswEU-j7A&s" alt="User Icon" class="w-5 h-5">
-                </a>
-                <button class="relative focus:outline-none focus:shadow-outline">
-                <img src="https://static-00.iconduck.com/assets.00/shopping-cart-icon-512x462-yrde1eu0.png" alt="Cart Icon" class="w-5 h-5">
-                </span>
-                </button>
-                </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div style="padding: 20px;">
-        <p style="font-size: 0.7em; color: #333; margin-bottom: 10px;">
-          Home / Clearance
-          <span class="mobile-break">|</span>
-          Save up to 40% Sonic Toothbrushes, Floss, & more
-        </p>
-        <h1 style="font-size: 2em; color: #005555; font-weight: bold; text-align: center; margin-bottom: 15px;">
-          Clearance
-        </h1>
-        <p style="text-align: center; color: #333; font-size: 0.8em;">
-          Last chance! Up to 40% Sonic Toothbrushes, Floss,
-          <span class="mobile-break">& more.</span>
-        </p>
-      </div>
-      
-      <style>
-        .mobile-break {
-          display: none; /* Hide larger screens */
-        }
-      
-        /*  larger screens */
-        @media (min-width: 601px) { 
-          div {
-            padding: 30px;
-          }
-          h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-          }
-          p {
-            font-size: 1em;
-            white-space: nowrap; /* Prevent wrapping on desktop  */
-          }
-          .mobile-break {
-            display: none !important; /*  it's hidden on larger screens */
-          }
-        }
-      
-        /* Styles specifically for mobile screens */
-        @media (max-width: 600px) { /* Apply to typical mobile screen widths */
-          div {
-            padding: 15px; /* Slightly smaller padding for mobile */
-          }
-          h1 {
-            font-size: 2.2em; /* Smaller heading for mobile */
-            margin-bottom: 10px;
-          }
-          p {
-            font-size: 0.9em; /* Slightly smaller paragraph text */
-            white-space: normal; /* Allow wrapping on mobile */
-          }
-          .mobile-break {
-            display: inline; /* Show line breaks on mobile */
-          }
-        }
-      </style>
-
-    
-        <section class="bg-white rounded-lg shadow-md py-8 px-6 mb-8">
-    
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center justify-center">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Glow in the Dark Sonic Toothbrush</h3>
-                    <p class="text-gray-500 mb-2">Special edition</p>
-                    <img src="https://www.getquip.com/cdn/shop/files/2501_DTC_AdultGITD_2880x2880_Green-1_grande.jpg?v=1738131532" alt="Glow in the Dark Sonic Toothbrush" style="max-width: 60%; height: auto;" class="mb-4">
-                    <p class="text-gray-700 font-semibold mb-2">Starting at $25.00</p>
-                    <div class="flex items-center mb-2">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                        </div>
-                        <span class="text-gray-500 ml-1">(20536)</span>
-                    </div>
-                    <div class="flex space-x-2 mb-4">
-                        <button class="w-6 h-6 rounded-full bg-green-500"></button>
-                        <button class="w-6 h-6 rounded-full bg-pink-500"></button>
-                    </div>
-                    <button class="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded focus:outline-none">Add to Cart</button>
-                </div>
-                <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center justify-center">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-2">Rechargeble sonic Toothbrush</h3>
-                    <p class="text-gray-500 mb-2">Special edition</p>
-                    <img src="https://www.getquip.com/cdn/shop/files/2501_DTC_SmartRecharge_2880x2880_Black-1.jpg?v=1738132097&width=600" alt="Another Product" style="max-width: 60%; height: auto;" class="mb-4">
-                    <p class="text-gray-700 font-semibold mb-2">Starting at $19.99</p>
-                    <div class="flex items-center mb-2">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-yellow-400">
-                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-3.63 8.83a1.596 1.596 0 001.736 2.166h7.268a1.596 1.596 0 001.736-2.166l-3.63-8.83z" clip-rule="evenodd" />
-                                <path d="M16.132 11.001L10 1.432l-6.132 9.569a1.49 1.49 0 011.03 1.762h8.2a1.49 1.49 0 011.029-1.762z" />
-                            </svg>
-                        </div>
-                        <span class="text-gray-500 ml-1">(20536)</span>
-                    </div>
-                    <div class="flex space-x-2 mb-4">
-                        <button class="w-6 h-6 rounded-full bg-green-500"></button>
-                        <button class="w-6 h-6 rounded-full bg-pink-500"></button>
-                    </div>
-                    <button class="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded focus:outline-none">Add to Cart</button>
-
-                </div>
-            </div>
-        </section>
-         
-    <footer class="bg-gray-100 py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">About us</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Our story</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Our design</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Reviews</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Help center</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Start a return</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Careers</a></li>
-                         <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Find a Store</a></li>
-                        </ul>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Oral health</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Blog</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Tips</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">iOS app</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">quip Perks</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Become an Affiliate</a></li>
-                    </ul>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Professionals</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Join here</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">Join our network</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">quip for dental pros</a></li>
-                    </ul>
-                </div>
-            </div>
-    
-            <hr class="border-gray-300 my-6">
-    
-            <div class="flex flex-col items-center md:flex-row md:justify-between">
-                <div class="flex justify-center space-x-4 mb-4 md:mb-0">
-                    <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">
-                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.988 4.383 10.954 10.139 11.852v-8.384H7.078v-3.469h3.061V9.831c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.235 2.686.235v2.953H15.83c-1.761 0-2.109 1.096-2.109 2.159v2.892h4.439l-.708 3.469h-3.731v8.384c5.757-.898 10.139-5.864 10.139-11.852z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-pink-600 transition duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-red-600 transition duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><path d="M10 15v-6l5 3-5 3z"/></svg>
-                    </a>
-                </div>
-                <div class="flex flex-col items-center justify-center md:flex-row md:justify-end md:items-center">
-                    <input type="email" placeholder="Enter your email" class="rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2 w-full mb-3 md:mb-0 md:mr-4">
-                
-                    <button class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md w-full md:w-auto mt-3 md:mt-0">Subscribe</button>
-                </div>
-            </div>
-            <div class="text-center mt-6 text-gray-500">
-                &copy; 2025 Your Company. All rights reserved.
-            </div>
-        </div>
-    </footer>
-    <div id="side-cart" class="fixed top-0 right-0 h-full bg-white shadow-lg w-80 transform translate-x-full transition duration-300 ease-in-out z-50 p-6">
-        <div class="flex justify-between items-center mb-4">
-            <h2 class="text-xl font-semibold text-gray-800">Your Cart</h2>
-            <button id="close-cart-button" class="text-gray-700 focus:outline-none focus:shadow-outline">
-                 <svg xmlns="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfjyMEbNRfdshP7V6tyruxlCvduRLPn8x8A&s" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+            <a href="#" class="account-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </a>
+            <a href="#" class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            </a>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
-        <div id="cart-items" class="space-y-4 overflow-y-auto max-h-[calc(100vh-12rem)]">
+    </div>
+</header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Clearance Sale</h1>
+          <h2>Save up to 40% on select quip products</h2>
+          <p>We're making room for new products, so get these limited supplies before they're gone for good.</p>
+          <a href="#products" class="shop-now-btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container">
+        <h2 class="section-title">Limited Quantities Available</h2>
+        
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://ext.same-assets.com/3137273170/1809989662.jpeg" alt="Sonic Toothbrush Green">
+              <div class="sale-tag">40% OFF</div>
             </div>
-        <div class="mt-6 border-t border-gray-200 pt-4">
-            <p class="text-gray-700 font-semibold">Total: <span id="cart-total" class="text-gray-900">0.00</span></p>
-            <button class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2.5 px-5 rounded-full transition duration-300 w-full mt-4">Checkout</button>
+            <div class="product-info">
+              <h3>Sonic Toothbrush</h3>
+              <div class="product-price">
+                <span class="sale-price">$25.00</span>
+                <span class="regular-price">$40.00</span>
+              </div>
+              <div class="color-options">
+                <span class="color-option green selected" data-color="green"></span>
+                <span class="color-option black" data-color="black"></span>
+                <span class="color-option white" data-color="white"></span>
+                <span class="color-option purple" data-color="purple"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://ext.same-assets.com/1004919433/1054997801.jpeg" alt="360 Oscillating Brush Black">
+              <div class="sale-tag">30% OFF</div>
+            </div>
+            <div class="product-info">
+              <h3>360 Oscillating Brush</h3>
+              <div class="product-price">
+                <span class="sale-price">$52.50</span>
+                <span class="regular-price">$75.00</span>
+              </div>
+              <div class="color-options">
+                <span class="color-option black selected" data-color="black"></span>
+                <span class="color-option blue" data-color="blue"></span>
+                <span class="color-option white" data-color="white"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://ext.same-assets.com/1004919433/1772675200.jpeg" alt="Anticavity Toothpaste">
+              <div class="sale-tag">25% OFF</div>
+            </div>
+            <div class="product-info">
+              <h3>Anticavity Toothpaste</h3>
+              <div class="product-price">
+                <span class="sale-price">$6.75</span>
+                <span class="regular-price">$9.00</span>
+              </div>
+              <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://ext.same-assets.com/3137273170/1528581860.jpeg" alt="Ultra Smart Electric Toothbrush">
+              <div class="sale-tag">35% OFF</div>
+            </div>
+            <div class="product-info">
+              <h3>Ultra Smart Electric Toothbrush</h3>
+              <div class="product-price">
+                <span class="sale-price">$64.99</span>
+                <span class="regular-price">$99.99</span>
+              </div>
+              <div class="color-options">
+                <span class="color-option purple selected" data-color="purple"></span>
+                <span class="color-option white" data-color="white"></span>
+                <span class="color-option black" data-color="black"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://i5.walmartimages.com/seo/Quip-Adult-Smart-Electric-Rechargeable-Toothbrush-Full-Head-Ocean-Blue_25887465-49b1-43f7-a69d-7c6529a324b1.1c7b80939eaaf765a9ef692eb6205f1c.jpeg" alt="Smart Rechargeable Toothbrush">
+              <div class="sale-tag">40% OFF</div>
+            </div>
+            <div class="product-info">
+              <h3>Smart Rechargeable Toothbrush</h3>
+              <div class="product-price">
+                <span class="sale-price">$39.00</span>
+                <span class="regular-price">$65.00</span>
+              </div>
+              <div class="color-options">
+                <span class="color-option blue selected" data-color="blue"></span>
+                <span class="color-option black" data-color="black"></span>
+                <span class="color-option green" data-color="green"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://ext.same-assets.com/2800375906/120588241.jpeg" alt="Gift Card">
+              <div class="sale-tag">15% OFF</div>
+            </div>
+            <div class="product-info">
+              <h3>Gift Card</h3>
+              <div class="product-price">
+                <span class="sale-price">$42.50</span>
+                <span class="regular-price">$50.00</span>
+              </div>
+              <div class="gift-amount-selector">
+                <select class="gift-amount">
+                  <option value="25">$25</option>
+                  <option value="50" selected>$50</option>
+                  <option value="75">$75</option>
+                  <option value="100">$100</option>
+                </select>
+              </div>
+              <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">iOS app</a></li>
+                    <li><a href="#">Android app</a></li>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Refer a friend</a></li>
+                    <li><a href="#">Find a Store</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Oral health</h3>
+                <ul>
+                    <li><a href="#">Professionals</a></li>
+                    <li><a href="#">Jobs and network</a></li>
+                    <li><a href="#">Sign for dental perks</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Modern Slavery Statement</a>
+                    <a href="#">Do not sell my info</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Sitemap</a>
+                </div>
+                <p class="copyright">© 2024 quip</p>
+            </div>
         </div>
     </div>
+</footer>
 
-     <div id="overlay" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden z-40"></div>
-
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const searchButton = document.getElementById('search-button');
-        const searchBar = document.getElementById('search-bar');
-        const closeSearchButton = document.getElementById('close-search-button');
-        const cartButton = document.getElementById('cart-button');
-        const sideCart = document.getElementById('side-cart');
-        const closeCartButton = document.getElementById('close-cart-button');
-        const cartItemsContainer = document.getElementById('cart-items');
-        const cartTotalElement = document.getElementById('cart-total');
-        const overlay = document.getElementById('overlay');
-
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        searchButton.addEventListener('click', () => {
-            searchBar.classList.toggle('hidden');
-        });
-
-        closeSearchButton.addEventListener('click', () => {
-            searchBar.classList.toggle('hidden');
-        });
-
-        cartButton.addEventListener('click', () => {
-            sideCart.classList.remove('translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden');
-        });
-
-        closeCartButton.addEventListener('click', () => {
-            sideCart.classList.add('translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        });
-
-        overlay.addEventListener('click', () => {
-            sideCart.classList.add('translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        });
-
-
-
-        // Sample product data (replace with your actual data source)
-        const products = [
-            { id: 1, name: 'quip Ultra Toothbrush', price: 75.00, image: 'https://i.ibb.co/Npg9R6R/Screenshot-2025-04-15-at-9-06-01-AM.jpg' },
-            { id: 2, name: 'Rechargeable Sonic Toothbrush', price: 45.00, image: 'https://i.ibb.co/8b6wC53/Screenshot-2025-04-15-at-9-08-25-AM.jpg' },
-            { id: 3, name: 'Glow in the Dark Toothbrush', price: 25.00, image: 'https://i.ibb.co/Mpy5PjC/Screenshot-2025-04-15-at-9-08-25-AM.jpg' },
-            { id: 4, name: 'Cordless Water Flosser', price: 60.00, image: 'https://i.ibb.co/y699nKx/Screenshot-2025-04-15-at-9-06-53-AM.jpg' },
-        ];
-
-        let cartItems = [];
-        let cartTotal = 0;
-
-        function addToCart(productId) {
-            const productToAdd = products.find(product => product.id === productId);
-
-            if (productToAdd) {
-                const existingItem = cartItems.find(item => item.id === productId);
-
-                if (existingItem) {
-                    existingItem.quantity += 1;
-                } else {
-                    cartItems.push({ ...productToAdd, quantity: 1 });
-                }
-
-                updateCart();
-                showCart(); // Open the cart after adding an item
-            }
-        }
-
-        function updateCart() {
-            cartItemsContainer.innerHTML = '';
-            cartTotal = 0;
-
-            cartItems.forEach(item => {
-                const itemElement = document.createElement('div');
-                itemElement.classList.add('flex', 'justify-between', 'items-center', 'border-b', 'border-gray-200', 'pb-2');
-                itemElement.innerHTML = `
-                    <div>
-                        <h3 class="text-gray-800 font-semibold">${item.name}</h3>
-                        <p class="text-gray-600 text-sm">Quantity: ${item.quantity}</p>
-                        <p class="text-gray-700 text-sm">Price: $${(item.price * item.quantity).toFixed(2)}</p>
-                    </div>
-                    <img src="${item.image}" alt="${item.name}" style="max-width: 60px; height: auto;" class="rounded-md">
-                    <button class="text-red-500 hover:text-red-700 focus:outline-none focus:shadow-outline text-xs" onclick="removeFromCart(${item.id})">Remove</button>
-                `;
-                cartItemsContainer.appendChild(itemElement);
-                cartTotal += item.price * item.quantity;
-            });
-
-            cartTotalElement.textContent = cartTotal.toFixed(2);
-        }
-
-        function removeFromCart(productId) {
-             const itemToRemoveIndex = cartItems.findIndex(item => item.id === productId);
-
-            if (itemToRemoveIndex !== -1) {
-                cartItems.splice(itemToRemoveIndex, 1);
-                updateCart();
-            }
-        }
-
-        function showCart() {
-            sideCart.classList.remove('translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden');
-        }
-
-
-
-        // Add to Cart Handlers for the main page sections
-        const section1Button = document.querySelector('.section1 button');
-        const section2Button = document.querySelector('.section2 button');
-        const section3Button = document.querySelector('.section3 button');
-        const section4Button = document.querySelector('.section4 button');
-        const section6Buttons = document.querySelectorAll('.section6 button');
-
-
-        if (section1Button) {
-            section1Button.addEventListener('click', () => addToCart(1));
-        }
-        if (section2Button) {
-            section2Button.addEventListener('click', () => addToCart(1));
-        }
-        if (section3Button) {
-            section3Button.addEventListener('click', () => addToCart(4));
-        }
-        if (section4Button) {
-            section4Button.addEventListener('click', () => addToCart(2));
-        }
-
-        section6Buttons.forEach((button, index) => {
-            if (index === 0) { 
-                button.addEventListener('click', () => addToCart(3));
-            } else if (index === 1) { 
-                button.addEventListener('click', () => addToCart(2));
-            }
-        });
-
-       
-        
-    </script>
+  <script type="module" src="clearance.css"></script>
 </body>
-</html>
 
+</html>
