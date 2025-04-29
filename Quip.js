@@ -1,14 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize components
+   
     initBanner();
     initMobileMenu();
     initEmailPopup();
     initAddToCartButtons();
 });
-
-/**
- * Top banner functionality
- */
 function initBanner() {
     const bannerCloseBtn = document.querySelector('.close-banner');
     if (bannerCloseBtn) {
@@ -19,16 +15,14 @@ function initBanner() {
     }
 }
 
-/**
- * Mobile menu toggle functionality
- */
+
 function initMobileMenu() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mainNav = document.querySelector('.main-nav');
 
     if (mobileMenuToggle && mainNav) {
         mobileMenuToggle.addEventListener('click', function() {
-            // Toggle active class for styling
+            // Toggle the active class on the mobile menu toggle button
             this.classList.toggle('active');
 
             // If mobile nav is not displayed, show it with animation
@@ -38,7 +32,7 @@ function initMobileMenu() {
                 overlay.className = 'mobile-nav-overlay';
                 document.body.appendChild(overlay);
 
-                // Show main nav as mobile menu
+                //  main nav as mobile menu
                 mainNav.style.display = 'block';
                 mainNav.style.position = 'fixed';
                 mainNav.style.top = '80px';
@@ -49,7 +43,7 @@ function initMobileMenu() {
                 mainNav.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
                 mainNav.style.zIndex = '99';
 
-                // Style the nav items for mobile view
+                // nav items for mobile view
                 const navItems = mainNav.querySelectorAll('ul');
                 navItems.forEach(ul => {
                     ul.style.flexDirection = 'column';
