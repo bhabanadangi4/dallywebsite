@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="Weather.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJNajyeZ1-a_lyQKXKuB6SxJcmt7pOlXH7qA&s" alt="" /></button>
+      </div>
+      <div class="error">
+        <p>Invalid city name.</p>
+      </div>
+      <div class="weather">
+        <img src="https://cdn-icons-png.flaticon.com/512/1332/1332316.png" class="weather-icon" alt="" />
+        <h1 class="temp">22*C</h1>
+        <h2 class="city">Kathmandu</h2>
+        <div class="details">
+          <div class="col">
+            <img src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png" alt="" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="https://cdn-icons-png.flaticon.com/512/4834/4834559.png" alt="" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind speed</p>
+            </div>
+          </div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-item" data-date="2025-08-05">
+                <div class="forecast-date">02 may</div>
+                <div class="forecast-icon icon-cloud-rain"></div>
+                <div class="forecast-temp">18 °C</div>
+            </div>
+            <div class="forecast-item" data-date="2025-08-06">
+                <div class="forecast-date">03 may</div>
+                <div class="forecast-icon icon-sun-cloud"></div>
+                <div class="forecast-temp">19 °C</div>
+            </div>
+            <div class="forecast-item" data-date="2025-08-07">
+                <div class="forecast-date">04 may</div>
+                <div class="forecast-icon icon-thunderstorm"></div>
+                <div class="forecast-temp">18 °C</div>
+            </div>
+            <div class="forecast-item" data-date="2025-08-08">
+                <div class="forecast-date">05 may</div>
+                <div class="forecast-icon icon-sun"></div>
+                <div class="forecast-temp">20 °C</div>
+            </div>
+      </div>
+    </div>
+    <script src="Weather.js"></script>
+  </body>
+</html>
